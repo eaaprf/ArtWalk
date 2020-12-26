@@ -10,7 +10,7 @@ define( function ( require ) {
 		version : '1',
 		app_type : 'cordova-template',
 		app_title : 'ArtWalk',
-		app_platform : 'android-cordova',
+		app_platform : 'android',
 		app_path: '',
 		gmt_offset : 0,
 		debug_mode : 'on',

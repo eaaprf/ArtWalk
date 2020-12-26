@@ -15,11 +15,14 @@
 
 	<!-- General preferences -->
 	<preference name="android-targetSdkVersion" value="28" />
+	<preference name="buildArchitecture" value="arm" />
+	<preference name="android-build-tool" value="gradle" />
 
 	<preference name="phonegap-version" value="1" />
 	<preference name="permissions" value="none"/>
 
-	<preference name="DisallowOverscroll" value="true" />
+	<preference name="disallowOverscroll" value="true" />
+	<preference name="webviewbounce" value="false" />
 
 
 	<!-- Custom preferences -->
@@ -31,6 +34,7 @@
 	<plugin name="cordova-plugin-splashscreen" source="npm" />
 	<plugin name="cordova-plugin-device" source="npm" />
 	<plugin name="cordova-plugin-statusbar" source="npm" />
+	<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.4" source="git" />
 
 	<!-- Whitelist policy  -->
 	<access origin="*" />
@@ -38,6 +42,9 @@
 	<allow-navigation href="*" />
 
 	<!-- SplashScreen configuration -->
+	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="FadeSplashScreenDuration" value="300" />
 	<preference name="ShowSplashScreenSpinner" value="false" />
 
 	<!-- Icons and Splashscreens declaration -->
