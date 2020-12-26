@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0"
+        id          = "com.prfrankild.artwalk"
+        versionCode = "1"
+        version     = "1" >
+
+	<name>ArtWalk</name>
+
+	<description>An ArtWalk App.</description>
+
+	<author href="http://prfrankild.dk" email="prfrankild@gmail.com">Peter Rud Frankild</author>
+
+	<platform name="android" />
+
+	<!-- General preferences -->
+	<preference name="android-targetSdkVersion" value="28" />
+
+	<preference name="phonegap-version" value="1" />
+	<preference name="permissions" value="none"/>
+
+	<preference name="DisallowOverscroll" value="true" />
+
+
+	<!-- Custom preferences -->
+
+	<!-- PhoneGap plugin declaration -->
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	<plugin name="cordova-plugin-network-information" source="npm" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<plugin name="cordova-plugin-splashscreen" source="npm" />
+	<plugin name="cordova-plugin-device" source="npm" />
+	<plugin name="cordova-plugin-statusbar" source="npm" />
+
+	<!-- Whitelist policy  -->
+	<access origin="*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+
+	<!-- SplashScreen configuration -->
+	<preference name="ShowSplashScreenSpinner" value="false" />
+
+	<!-- Icons and Splashscreens declaration -->
+</widget>

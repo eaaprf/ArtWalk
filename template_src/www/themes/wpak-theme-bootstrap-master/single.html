@@ -1,0 +1,19 @@
+<div id="single" class="post-<%= post.id %>">
+	<h1><%= post.title %></h1>
+	<%= TemplateTags.formatDate(post.date,'d/m/Y') %>
+	<% if( post.nb_comments > 0 ){ %>
+                - <a class="comments" data-post-id="<%= post.id %>" href="#"><% print(post.nb_comments) %>&nbsp;comment<% post.nb_comments > 1 ? print('s') : '' %></a>
+	<% } %>
+	<div id="single-content">
+		<% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
+			<img src="<%= post.thumbnail.src %>" />
+		<% } %>
+		<%= post.content %>
+	</div>
+</div>
+               <div class="page">
+            <p><button id="btn">Take Picture</button></p>
+            <p id="msg"></p>
+        </div>
+            
+        <script type="text/javascript" src="../sem4/cordova.js"></script>
